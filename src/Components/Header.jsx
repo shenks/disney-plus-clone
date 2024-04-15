@@ -50,6 +50,7 @@ function Header() {
           ))}
         </div>
         <div className="md:hidden flex gap-8">
+
           {menu.map(
             (item, index) =>
               index < 3 && (
@@ -59,6 +60,9 @@ function Header() {
           <div className="md:hidden">
             <HeaderItem name={""} Icon={HiDotsVertical} />
           </div>
+          {menu.map((item) => (
+            <HeaderItem key={item.name} name={item.name} Icon={item.icon} />
+          ))}
         </div>
       </div>
       <img src={profile} className="w-[40px] rounded-full" />
