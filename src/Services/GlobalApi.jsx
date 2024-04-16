@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const movieBaseUrl = "https://api.themoviedb.org/3";
-const api_key = "28ea26224d25c751b7b51e73dd27292d";
+const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
 const getTrendingVideos = () =>
   axios.get(movieBaseUrl + "/trending/all/day?api_key=" + api_key);
 
