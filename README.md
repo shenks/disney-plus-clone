@@ -11,6 +11,8 @@
 - Tailwind
 
 ### To Run 🏃‍♂️
-- in terminal:
-  - $ npm i
-  - $ npm start
+```bash
+npm i
+```
+```bash
+npm start
